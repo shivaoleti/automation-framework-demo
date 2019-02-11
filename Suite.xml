@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity">
+    <parameter name="browser" value="Chrome"/>
+    <test name="login_Test">
+        <parameter name="username" value="shivaoleti@gmail.com"/>
+        <parameter name="password" value="abc@123"/>
+
+        <!--<groups>
+            <run>
+                <include name="Sanity"/>
+                &lt;!&ndash;<exclude name="Regression" />&ndash;&gt;
+            </run>
+        </groups>-->
+        <classes>
+            <class name="logintests.LoginTestsWithDataProvider"/>
+        </classes>
+    </test>
+</suite>
